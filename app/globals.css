@@ -1,1 +1,88 @@
 @import "leaflet/dist/leaflet.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   BASE RESET PROPRE
+========================= */
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Buttons reset */
+button {
+  cursor: pointer;
+}
+
+/* Inputs clean */
+input, button {
+  outline: none;
+}
+
+/* =========================
+   UTILITAIRES PWA STYLE
+========================= */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Card style global */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Primary button */
+.btn-primary {
+  background: #16a34a;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background: #15803d;
+}
+
+/* Secondary button */
+.btn-outline {
+  border: 1px solid #16a34a;
+  color: #16a34a;
+  padding: 10px 16px;
+  border-radius: 10px;
+}
+
+/* =========================
+   MOBILE / PWA FEEL
+========================= */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
